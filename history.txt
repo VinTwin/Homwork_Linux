@@ -1,0 +1,25 @@
+   0 # Create the "animals" directory in /home
+   1 mkdir /home/animals
+   2 # Create the "dogs", "cats", and "fish" subdirectories within "animals"
+   3 mkdir /home/animals/dogs
+   4 mkdir /home/animals/cats
+   5 mkdid /home/animals/fish
+   6 mkdir /home/animals/fish
+   7 # Add the files "pluto", "nemo", and "garfield" to the appropriate directories
+   8 touch /home/animals/dogs/pluto
+   9 touch /home/animals/fish/nemo
+  10 touch /home/animals/cats/garfield
+  11 # Create the file "adam" in /tmp
+  12 touch /tmp/adam
+  13 # Copy "adam" to /home/humans (create the "humans" directory if it doesn't exist)
+  14 mkdir -p /home/humans
+  15 cp /tmp/adam /home/humans/
+  16 # Create the file "evA" in /tmp
+  17 touch /tmp/evA
+  18 # Move "evA" to /opt/eve (renaming it in the process)
+  19 mv /tmp/evA /opt/eve
+  20 # Move "eve" from /opt/eve to /home/humans
+  21 mv /opt/eve /home/humans/
+  22 # Check that "adam" and "eve" are located in the /home/humans directory
+  23 ls /home/humans
+  24 history > /tmp/history.txt
